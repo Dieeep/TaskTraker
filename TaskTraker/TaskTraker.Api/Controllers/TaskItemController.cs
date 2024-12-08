@@ -7,8 +7,8 @@ using TaskTraker.Services.Interfaces;
 
 namespace TaskTraker.Api.Controllers
 {
-    [EnableCors]
-    [Authorize]
+    [EnableCors("AllowAll")]
+    //[Authorize]
     [Route("api/task-items")]
     [ApiController]
     public class TaskItemsController(ITaskItemService service) : ControllerBase

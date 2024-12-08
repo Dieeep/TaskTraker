@@ -8,8 +8,8 @@ using TaskTraker.Services.Interfaces;
 
 namespace TaskTraker.Api.Controllers
 {
-    [EnableCors]
-    [Authorize]
+    [EnableCors("AllowAll")]
+    //[Authorize]
     [Route("api/board")]
     [ApiController]
     public class BoardController(IBoardService service) : ControllerBase
